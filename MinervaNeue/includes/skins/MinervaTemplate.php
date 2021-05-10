@@ -38,7 +38,7 @@ class MinervaTemplate extends BaseTemplate {
 		$title = $this->getSkin()->getTitle();
 		$this->isSpecialPage = $title->isSpecialPage();
 		$this->isSpecialMobileMenuPage = $this->isSpecialPage &&
-			$title->equals( SpecialPage::getTitleFor( 'MobileMenu' ) );
+			$title->isSpecial( 'MobileMenu' );
 		$this->isMainPage = $title->isMainPage();
 		Hooks::run( 'MinervaPreRender', [ $this ] );
 		$this->render( $this->data );
@@ -295,6 +295,7 @@ class MinervaTemplate extends BaseTemplate {
 			'headelement' => $data[ 'headelement' ],
 			'menuButton' => $data['menuButton'],
 			'headinghtml' => $data['footer-site-heading-html'],
+			'mainPageURL' => Title::newMainPage()->getLocalUrl(),
 			// A button when clicked will submit the form
 			// This is used so that on tablet devices with JS disabled the search button
 			// passes the value of input to the search
@@ -312,7 +313,7 @@ class MinervaTemplate extends BaseTemplate {
 		// begin rendering
 		echo $templateParser->processTemplate( 'minerva', $templateData );
 		$this->printTrail();
-		?>
+        ?>
 		</body>
 		</html>
 		<?php

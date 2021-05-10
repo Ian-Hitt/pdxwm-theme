@@ -1,6 +1,5 @@
 {{{headelement}}}
 <div id="mw-mf-viewport">
-	{{>ie8Html5Support}}
 	<nav id="mw-mf-page-left" class="navigation-drawer view-border-box">
 		{{{mainmenuhtml}}}
 	</nav>
@@ -8,28 +7,199 @@
 		<div class="banner-container">
 			{{>banners}}
 		</div>
-		<div class="header-container header-chrome">
+
+        <div class="pdx_mainNavBar ts-container" id="mw-header-container">
+            <div class="ts-inner" id="mw-header">
+                <div class="pd_menuTrigger">
+                    <div class="p-nav-menuTrigger">
+                        <div class="menu-icon">
+                            <div class="menu-icon__bar"></div>
+                            <div class="menu-icon__bar"></div>
+                            <div class="menu-icon__bar"></div>
+                        </div>
+                        <i class="pd-logo-icon uix_logoIcon"></i>
+                    </div>
+                    <div class="pd_nav">
+                        <div 0="class" 1="header-menu__navigation content">
+                            <div 0="class" 1="navigation-menu nav-active" id="header-menu">
+                                <div class="navigation-menu__list">
+                                    <div class="navigation-menu__section">
+                                        <div class="navigation-menu__section-items-container">
+                                            <a class="navigation-menu__section-item" href="https://forum.paradoxplaza.com/forum/forums/">Forum list</a>
+                                            <a class="navigation-menu__section-item" href="https://forum.paradoxplaza.com/forum/threads/trending">Trending</a>
+                                            <a class="navigation-menu__section-item" href="https://forum.paradoxplaza.com/forum/threads/latest">Latest</a>
+                                            <a class="navigation-menu__section-item" href="https://forum.paradoxplaza.com/forum/threads/newest">New posts</a>
+                                        </div>
+                                    </div>
+                                    <div class="content-asset">
+                                        <div class="navigation-menu__section">
+                                            <div class="navigation-menu__section-title">Paradox</div>
+                                            <div class="navigation-menu__section-items-container">
+                                                <div class="navigation-menu__section-items-container">
+                                                    <a class="navigation-menu__section-item" href="https://www.paradoxplaza.com/">Store</a>
+                                                    <a class="navigation-menu__section-item" href="https://mods.paradoxplaza.com/">Mods</a>
+                                                    <a class="navigation-menu__section-item" href="https://forum.paradoxplaza.com/forum/forums/">Forum</a>
+                                                    <a class="navigation-menu__section-item" href="https://play.paradoxplaza.com/">Launcher</a>
+                                                    <a class="navigation-menu__section-item" href="https://pdxcon.paradoxplaza.com/?utm_source=pdxplaza-owned&amp;utm_medium=web-owned&amp;utm_content=topmenu-banner&amp;utm_campaign=pc18_pdxcon_20190412_cawe_ann">PDXCON 2019</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-header-logo p-header-logo--image">
+                        <a class="uix_logo" href="/">
+                            <div class="uix_logo--text">
+                                <span>Paradox Wikis</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pdx_siteToggle pdx_hasDropdown">
+                    <div class="pdx_siteToggle__trigger pdx_dropdownTrigger"><span>{{{headinghtml}}}</span><i></i></div>
+                    <div class="pdx_dropdown pdx_dropdown--extraLarge">
+                        <div class="pdx_gameChanger">
+                            <div class="pdx_gameChanger__title">Active Wikis</div>
+                            <div class="pdx_dropdown__menuList pdx_dropdown__menuList pdx_dropdown__menuList--columns">
+                                <a href="https://eos.paradoxwikis.com/Empire_of_Sin_Wiki" class="pdx_menu__link pdx_gameChanger--eos">Empire of Sin</a>
+                                <a href="https://aowplanetfall.paradoxwikis.com/AoW_Planetfall_Wiki" class="pdx_menu__link pdx_gameChanger--planetfall">AoW: Planetfall</a>
+                                <a href="https://skylines.paradoxwikis.com/Cities:_Skylines_Wiki" class="pdx_menu__link pdx_gameChanger--skylines">Cities: Skylines</a>
+                                <a href="https://ck3.paradoxwikis.com/Crusader_Kings_III_Wiki" class="pdx_menu__link pdx_gameChanger--ck3">Crusader Kings 3</a>
+                                <a href="https://eu4.paradoxwikis.com/Europa_Universalis_4_Wiki" class="pdx_menu__link pdx_gameChanger--eu4">Europa Universalis 4</a>
+                                <a href="https://hoi4.paradoxwikis.com/Hearts_of_Iron_4_Wiki" class="pdx_menu__link pdx_gameChanger--hi4">Hearts of Iron 4</a>
+                                <a href="https://imperator.paradoxwikis.com/Imperator_Wiki" class="pdx_menu__link pdx_gameChanger--improme">Imperator: Rome</a>
+                                <a href="https://prisonarchitect.paradoxwikis.com/" class="pdx_menu__link pdx_gameChanger--architect">Prison Architect</a>
+                                <a href="https://stellaris.paradoxwikis.com/Stellaris_Wiki" class="pdx_menu__link pdx_gameChanger--stellaris">Stellaris</a>
+                                <a href="https://survivingmars.paradoxwikis.com/Surviving_Mars_Wiki" class="pdx_menu__link pdx_gameChanger--mars">Surviving Mars</a>
+                                <a href="https://sta.paradoxwikis.com/Surviving_The_Aftermath_Wiki" class="pdx_menu__link pdx_gameChanger--aftermath">Surviving the Aftermath</a>
+                            </div>
+                            <div class="pdx_gameChanger__title">Legacy Wikis</div>
+                            <div class="pdx_dropdown__menuList pdx_dropdown__menuList pdx_dropdown__menuList--columns">
+                                <a href="https://ck2.paradoxwikis.com/Crusader_Kings_II_Wiki" class="pdx_menu__link pdx_gameChanger--ck2">Crusader Kings 2</a>
+                                <a href="https://aod.paradoxwikis.com/Main_Page" class="pdx_menu__link pdx_gameChanger--arsenal">Arsenal of Democracy</a>
+                                <a href="https://eu2.paradoxwikis.com/Main_Page" class="pdx_menu__link pdx_gameChanger--eu2">Europa Universalis 2</a>
+                                <a href="https://eu3.paradoxwikis.com/Europa_Universalis_3_Wiki" class="pdx_menu__link pdx_gameChanger--eu3">Europa Universalis 3</a>
+                                <a href="https://eurome.paradoxwikis.com/Europa_Universalis:_Rome_Wiki" class="pdx_menu__link pdx_gameChanger--eurome">Europa Universalis: Rome</a>
+                                <a href="https://hoi2.paradoxwikis.com/Main_Page" class="pdx_menu__link pdx_gameChanger--hi2">Hearts of Iron 2</a>
+                                <a href="https://hoi3.paradoxwikis.com/Hearts_of_Iron_3_Wiki" class="pdx_menu__link pdx_gameChanger--hi3">Hearts of Iron 3</a>
+                                <a href="https://steeldivision.paradoxwikis.com/Steel_Division_Wiki" class="pdx_menu__link pdx_gameChanger--steel">Steel Division</a>
+                                <a href="https://tyranny.paradoxwikis.com/Tyranny_Wiki" class="pdx_menu__link pdx_gameChanger--tyranny">Tyranny</a>
+                                <a href="https://vic1.paradoxwikis.com/Main_Page" class="pdx_menu__link pdx_gameChanger--vic1">Victoria 1</a>
+                                <a href="https://vic2.paradoxwikis.com/Victoria_2_Wiki" class="pdx_menu__link pdx_gameChanger--vic2">Victoria 2</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pdx_mainNavBar__opposite">
+                    <div class="search-box">
+                        <input class="search skin-minerva-search-trigger" type="search" name="search" id="searchInput"
+                        placeholder="{{placeholder}}"
+                        value="{{search}}">
+                    </div>
+                    <div>{{{searchButton}}}</div>
+                </div>
+
+                {{!
+                <div class="pdx_mainNavBar__opposite">
+                    <div id="p-search" role="search">
+                    
+						<h3<?php $this->html( 'userlangattributes' ) ?>>
+							<label for="searchInput"><?php $this->msg( 'search' ) ?></label>
+                        </h3>
+                        <i class="pdx_searchTrigger"></i>
+						<form action="<?php $this->text( 'wgScript' ) ?>" id="searchform">
+							<div<?php echo $this->config->get( 'VectorUseSimpleSearch' ) ? ' id="simpleSearch"' : '' ?>>
+								<?php
+								echo $this->makeSearchInput( [ 'id' => 'searchInput', 'placeholder' => 'Search in Wiki' ] );
+								echo Html::hidden( 'title', $this->get( 'searchtitle' ) );
+
+								echo $this->makeSearchButton(
+									'fulltext',
+									[ 'id' => 'mw-searchButton', 'class' => 'searchButton mw-fallbackSearchButton' ]
+								);
+								echo $this->makeSearchButton(
+									'go',
+									[ 'id' => 'searchButton', 'class' => 'searchButton' ]
+								);
+								?>
+							</div>
+                        </form>
+                    </div>
+
+                    <div id="p-personal" role="navigation" class="<?php
+                        if ( count( $this->data['personal_urls'] ) == 0 ) {
+                            echo ' emptyPortlet';
+                        }?>" aria-labelledby="p-personal-label">
+                        <h3 id="p-personal-label"><?php $this->msg( 'personaltools' ) ?></h3>
+                        <div class="pdx_hasDropdown">
+                            <?php
+
+                            $notLoggedIn = '';
+
+                            if ( !$this->getSkin()->getUser()->isLoggedIn() &&
+                                User::groupHasPermission( '*', 'edit' )
+                            ) {
+                                $notLoggedIn =
+                                // $this->getMsg( 'notloggedin' )->text()
+                                // 'Log in' .
+                                Html::rawElement('a', ['class' => 'pdx_dropdownTrigger'], 'Log in');
+                            }
+
+                            $personalTools = $this->getPersonalTools();
+
+                            $langSelector = '';
+                            if ( array_key_exists( 'uls', $personalTools ) ) {
+                                $langSelector = $this->makeListItem( 'uls', $personalTools[ 'uls' ] );
+                                unset( $personalTools[ 'uls' ] );
+                            }
+
+                            echo $langSelector;
+                            echo $notLoggedIn;
+
+                            echo Html::openElement('div', ['class' => 'pdx_dropdown']);
+                                echo html::openElement('ul');
+                                    foreach ( $personalTools as $key => $item ) {
+                                        echo $this->makeListItem( $key, $item );
+                                    }
+                                echo html::closeElement('ul');
+                            echo Html::closeElement('div');
+
+                            ?>                            
+                        </div>
+                    </div>  
+                </div>
+                }}
+			</div>
+        </div>
+
+		<header class="header-container header-chrome">
 			<form class="header" action="{{wgScript}}" method="get">
 				<div>{{{menuButton}}}</div>
 				<div class="branding-box">
-					<h1>
+					<a href="{{mainPageURL}}">
 						<span>{{{headinghtml}}}</span>
 						<sup>&beta;</sup>
-					</h1>
+					</a>
 				</div>
 				<div class="search-box">
 					<input class="search skin-minerva-search-trigger" type="search" name="search" id="searchInput"
-					   autocomplete="off" placeholder="{{placeholder}}"
+					   placeholder="{{placeholder}}"
 					   value="{{search}}">
 				</div>
 				<div>{{{searchButton}}}</div>
 				{{^isAnon}}<div>{{#secondaryButtonData}}{{>secondaryButton}}{{/secondaryButtonData}}</div>{{/isAnon}}
 			</form>
-		</div>
-		<div id="content" class="mw-body">
+		</header>
+		<main id="content" class="mw-body">
 			{{{contenthtml}}}
-		</div>
+		</main>
 		{{>footer}}
+        <div class="footer pdx_footer"><div class="footer-container content grid ts-inner"><div class="footer__logo footer-item"><div class="content-asset"><div class="footer__logo-image"><img src="https://www.paradoxplaza.com/on/demandware.static/Sites-Paradox_US-Site/-/en_US/images/footer-master-logo.png"></div></div></div><div class="footer__games footer-item"><div class="content-asset"><div class="footer_section_title">Games</div><ul class="footer__menu"><li class="footer__menu_link"><a href="https://www.paradoxplaza.com/games/" title="Browse">Browse</a></li><li class="footer__menu_link"><a href="https://www.paradoxplaza.com/new-releases/" title="New Releases">New Releases</a></li><li class="footer__menu_link"><a href="https://www.paradoxplaza.com/coming-soon/" title="Coming Soon">Coming Soon</a></li><li class="footer__menu_link"><a href="https://www.paradoxplaza.com/on-sale/" title="On Sale">On Sale</a></li><li class="footer__menu_link"><a href="https://play.paradoxplaza.com/" title="Paradox Launcher">Play on Paradox technology</a></li></ul></div></div><div class="footer__community footer-item"><div class="content-asset"><div class="footer_section_title">Community</div><ul class="footer__menu"><li class="footer__menu_link"><a href="https://forum.paradoxplaza.com/forum/index.php" title="Paradox Forums">Paradox Forums</a></li><li class="footer__menu_link"><a href="https://paradoxwikis.com/" title="Paradox Wikis">Paradox Wikis</a></li><li class="footer__menu_link"><a href="https://www.paradoxplaza.com/support-static-info-ca.html" title="Support">Support</a></li><li class="footer__menu_link"><a href="http://merch.paradoxplaza.com/" title="Merch">Merch</a></li></ul></div></div><div class="footer__about footer-item"><div class="content-asset"><div class="footer_section_title">About</div><ul class="footer__menu"><li class="footer__menu_link"><a href="https://www.paradoxplaza.com/news" title="News">News</a></li><li class="footer__menu_link"><a href="https://www.paradoxplaza.com/about-us-static-info-ca.html" title="About us">About us</a></li><li class="footer__menu_link"><a href="http://career.paradoxplaza.com/" title="Careers">Careers</a></li><li class="footer__menu_link"><a href="https://www.paradoxplaza.com/playtest-static-info-ca.html" title="Join our playtests">Join our playtests</a></li><li class="footer__menu_link"><a href="https://www.paradoxplaza.com/press-static-info-ca.html" title="Media contact">Media contact</a></li></ul></div></div><div class="footer__socialmedia footer-item"><div class="content-asset"><div class="footer_section_title">Social Media</div><ul class="footer__socialmedia-icons"><li class="footer__social-icon"><a href="https://www.facebook.com/ParadoxInteractive" target="_blank"><span class="icon icon-facebook-with-circle"></span></a></li><li class="footer__social-icon"><a href="https://twitter.com/PdxInteractive" target="_blank"><span class="icon icon-twitter-with-circle"></span></a></li><li class="footer__social-icon"><a href="https://www.youtube.com/user/Paradoxplaza" target="_blank"><span class="icon icon-youtube-with-circle"></span></a></li><li class="footer__social-icon"><a href="https://www.twitch.tv/paradoxinteractive" target="_blank"><span class="icon icon-twitch-with-circle"></span></a></li><li class="footer__social-icon"><a href="https://www.instagram.com/explore/locations/241319129/paradox-interactive/" target="_blank"><span class="icon icon-instagram-with-circle"></span></a></li><li class="footer__social-icon"><a href="https://open.spotify.com/artist/75N2nC2KNgaQ1e6bGs0wyc" target="_blank"><span class="icon icon-spotify-with-circle"></span></a></li></ul></div><div class="hide-for-small"><div class="content-asset"><ul class="footer__menu"><li class="footer__menu_link-small"><a href="https://legal.paradoxplaza.com/" title="Terms &amp; Policies">Terms &amp; Policies</a></li><li class="footer__menu_link-small"><a href="https://www.paradoxplaza.com/legal-static-info-ca.html" title="Legal Information">Legal Information</a></li><li class="footer__menu_link-small"><a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage" title="EU Online Dispute Resolution">EU Online Dispute Resolution</a></li><li class="footer__menu_link-small"><a href="https://www.paradoxplaza.com/faq-static-info-ca.html" title="Frequently Asked Questions">Frequently Asked Questions</a></li><li class="footer__menu_link-small"><a href="http://www.paradoxinteractive.com/" title="Paradox Interactive corporate website">Paradox Interactive corporate website</a></li></ul></div></div></div><div class="footer__legal footer-item show-for-small"><div class="content-asset"><ul class="footer__menu"><li class="footer__menu_link-small"><a href="https://legal.paradoxplaza.com/" title="Terms &amp; Policies">Terms &amp; Policies</a></li><li class="footer__menu_link-small"><a href="https://www.paradoxplaza.com/legal-static-info-ca.html" title="Legal Information">Legal Information</a></li><li class="footer__menu_link-small"><a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage" title="EU Online Dispute Resolution">EU Online Dispute Resolution</a></li><li class="footer__menu_link-small"><a href="https://www.paradoxplaza.com/faq-static-info-ca.html" title="Frequently Asked Questions">Frequently Asked Questions</a></li><li class="footer__menu_link-small"><a href="http://www.paradoxinteractive.com/" title="Paradox Interactive corporate website">Paradox Interactive corporate website</a></li></ul></div></div></div></div>
 	</div>
 </div>
+<div class="mw-notification-area" data-mw="interface"></div>
 <!-- v:8.1.2 -->
