@@ -43,9 +43,12 @@
 			"styles": {
 				"screen.less": {
 					"media": "screen"
-				},
+                },
+                "paradox.less": {
+					"media": "screen"
+                },
 				"screen-hd.less": {
-					"media": "screen and (min-width: 982px)"
+					"media": "screen and ( min-width: 982px )"
 				},
 				"print.less": {}
 			}
@@ -60,7 +63,8 @@
 		"skins.vector.js": {
 			"scripts": [
 				"collapsibleTabs.js",
-				"vector.js"
+                "vector.js",
+                "paradox.js"
 			],
 			"dependencies": [
 				"jquery.throttle-debounce",
