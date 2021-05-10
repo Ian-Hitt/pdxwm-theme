@@ -70,7 +70,12 @@ class SkinVector extends SkinTemplate {
 			$this->enableResponsiveMode();
 		}
 
-		$out->addModules( 'skins.vector.js' );
+        $out->addModules( 'skins.vector.js' );
+        
+        $out->addMeta( 'viewport',
+            'width=device-width, initial-scale=1.0, ' .
+            'user-scalable=yes'
+        );
 	}
 
 	/**
